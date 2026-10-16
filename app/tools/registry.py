@@ -121,6 +121,7 @@ def _register_default_tools(reg: ToolRegistry) -> None:
     from app.tools.report_tools import register_report_tools
     from app.tools.reconciliation_tools import register_reconciliation_tools
     from app.tools.search_tools import register_search_tools
+    from app.tools.qloo_tools import register_qloo_tools
 
     register_client_tools(reg)
     register_document_tools(reg)
@@ -130,3 +131,4 @@ def _register_default_tools(reg: ToolRegistry) -> None:
     register_report_tools(reg)
     register_reconciliation_tools(reg)
     register_search_tools(reg)
+    register_qloo_tools(reg)

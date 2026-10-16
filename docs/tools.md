@@ -14,7 +14,7 @@ Every tool is declared in `app/tools/registry.py` and grouped by domain in
 Execution always goes through the Backend (`BackendClient`) — the engine never
 implements business logic itself.
 
-## Registered tools (24)
+## Registered tools (25)
 
 ### Read tools
 
@@ -28,6 +28,7 @@ implements business logic itself.
 | `get_client_meetings`             | Upcoming/past meetings for a client            |
 | `get_client_documents`            | Client document list                           |
 | `search_client_documents`         | Search within a client's documents             |
+| `get_affinity`                    | Qloo cross-domain affinities for an entity (hackathon build; live calls need `QLOO_API_KEY`) |
 | `get_pending_work`                | Pending tasks/items for a client               |
 | `get_upcoming_deadlines`          | Upcoming compliance deadlines                  |
 | `get_client_requests`             | Client requests list                           |
